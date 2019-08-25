@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS EMPLOYEE;
+
+CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, USERNAME VARCHAR(255), PASSWORD VARCHAR(255), FIRST_NAME VARCHAR(255), MIDDLE_NAME VARCHAR(255), LAST_NAME VARCHAR(255), EMAIL VARCHAR(255), ADDRESS VARCHAR(255));
+
+INSERT INTO EMPLOYEE VALUES(1, 'sumeetteemus', 'local123', 'Sumeet', '', 'Kumar', 'sumeet.kumar@publicissapient.com', 'bihar');
+INSERT INTO EMPLOYEE VALUES(2, 'dipshikha', 'local123', 'Dipshikha', '', 'Ghosh', 'dipshikha.ghosh@accenture.com', 'west bengal');
+SELECT * FROM EMPLOYEE ORDER BY ID;
