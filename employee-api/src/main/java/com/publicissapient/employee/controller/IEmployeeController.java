@@ -15,7 +15,7 @@ import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
-@Api(value = "Employee Management System", description = "Operations pertaining to employee in Employee Management System")
+@Api(value = "Employee Management System")
 public interface IEmployeeController {
 
 	@ApiOperation(value = "View a list of available employees", response = List.class)
