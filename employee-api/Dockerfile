@@ -7,7 +7,7 @@ LABEL maintainer="sumeet.it007@gmail.com"
 # The application's jar file
 ARG JAR_FILE=target/employee-api-0.0.1-SNAPSHOT.jar
 
-# Add the application's jar to the container
+# Add the application's jar to the container (Copy can be used instead of ADD but ADD can also work for tar images)
 ADD ${JAR_FILE} employee-api.jar
 
 # Run the jar file 
