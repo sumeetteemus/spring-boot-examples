@@ -21,6 +21,7 @@ http://localhost:20000/publicissapient/swagger-ui.html
 
 ## Docker Command
 ======================
+
 > docker login --username sumeetteemus
 > docker image ls
 > docker image rm image_id or > docker rmi image_id 							(To remove a image using image_id)
@@ -45,3 +46,6 @@ Now docker can be run now but if docker image is required to be pulled from hub 
 
 > docker inspect image_id/image_name	(To get all details of a particular image)
 Note: If code has been changes, when code is developed/tested locally. Then image is build and push again with same tag. Other developer needs to take a pull of this image
+Expose means exposing outside of container but inside docker only.
+-p means exposing outside dockers. Both means everywhere.
+Using CMD, we need bash then we can invoke java but using ENTRYPOINT it does all.
